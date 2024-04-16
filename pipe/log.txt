@@ -1,0 +1,14 @@
+2024-04-15 08:30:01 INFO Iniciando o servidor na porta 8080
+2024-04-15 08:32:45 ERRO Falha na autenticação do usuário
+2024-04-15 08:33:10 ERRO Falha na autenticação do usuário
+2024-04-15 08:33:35 ERRO Erro de conexão com o banco de dados
+2024-04-15 08:34:00 INFO Usuário admin logado
+2024-04-15 08:34:05 INFO Solicitação de página /home
+2024-04-15 08:35:20 WARNING Limite de API excedido
+2024-04-15 08:35:50 ERRO Erro de conexão com o banco de dados
+2024-04-15 08:36:15 ERRO Erro de conexão com o banco de dados
+2024-04-15 08:40:00 INFO Backup do banco de dados concluído
+2024-04-15 08:45:00 INFO Usuário admin deslogado
+2024-04-15 08:50:00 ERRO Falha na autenticação do usuário
+2024-04-15 08:55:00 INFO Solicitação de página /contact
+2024-04-15 09:00:00 WARNING Tentativa de acesso não autorizado

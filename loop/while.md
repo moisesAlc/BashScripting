@@ -56,4 +56,4 @@ Em loops while que envolvem esperar por eventos (como a criação de um arquivo 
 ## Tratamento de sinais: 
 Em scripts mais complexos que podem ser interrompidos, considerar o tratamento de sinais para sair de loops while de maneira limpa é crucial, usando por exemplo [trap](..\trap\trap.md) para capturar sinais e limpar recursos antes de sair.
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

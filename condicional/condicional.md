@@ -102,4 +102,4 @@ if [ "$a" -le "$b" ]; then
 fi
 ```
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

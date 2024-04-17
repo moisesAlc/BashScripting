@@ -37,4 +37,4 @@ Além do -p para exibir um prompt personalizado, o comando read possui várias o
 ## Considerações de Segurança
 Quando você solicita entrada do usuário, é importante considerar questões de segurança, especialmente quando se trata de informações sensíveis, como senhas. Evite exibir senhas na tela e use opções como -s para tornar a entrada silenciosa. Além disso, sempre valide e sanitize a entrada do usuário para evitar vulnerabilidades de segurança, como injeção de código.
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

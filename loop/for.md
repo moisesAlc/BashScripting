@@ -74,4 +74,4 @@ Certifique-se de que a lista que você está iterando contém os valores esperad
 ### Evite subshells desnecessários: 
 Embora seja útil iterar sobre a saída de um comando, isso pode ser ineficiente se a saída for grande. Considere alternativas, como gerar a lista de itens em um arquivo temporário e iterar sobre ele.
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

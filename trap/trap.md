@@ -58,4 +58,4 @@ Embora você possa tecnicamente colocar qualquer comando no trap, é melhor mant
 ### Teste os Traps com Diferentes Sinais:
 Diferentes sistemas e terminais podem comportar-se de maneira ligeiramente diferente, então é uma boa prática testar como os sinais são manipulados em seu ambiente específico.
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

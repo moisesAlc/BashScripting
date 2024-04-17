@@ -104,4 +104,4 @@ set -sg escape-time 1
 bind r command-prompt "rename-session %%"
 ```
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

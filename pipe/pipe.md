@@ -43,4 +43,4 @@ Se um comando em um pipeline falha, isso pode afetar toda a cadeia. Alguns shell
 #### Custos de Performance: 
 Embora eficientes, pipes podem ser custosos em termos de performance se não forem bem estruturados, especialmente se cada passo do pipeline processar grandes volumes de dados.
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

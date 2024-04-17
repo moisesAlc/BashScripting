@@ -43,4 +43,4 @@ read -p "Digite dois nomes separados por espaço: " nome1 nome2
 ```
 Se o IFS estiver configurado para espaço, ```nome1``` receberá a primeira palavra e ```nome2``` receberá o restante da linha.
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

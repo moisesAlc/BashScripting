@@ -74,4 +74,4 @@ unset nomes[1]  # Remove o elemento com índice 1
 ## Considerações
 Arrays em Bash são úteis para scripts que necessitam manipular listas de dados ou configurar múltiplos valores de configuração de forma organizada. No entanto, eles têm algumas limitações em comparação com arrays em linguagens de programação mais completas, como a falta de suporte para arrays multidimensionais nativos e limitações em operações complexas de dados.
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

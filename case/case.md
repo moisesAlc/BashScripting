@@ -82,4 +82,4 @@ Aqui, o script verifica se uma palavra começa com 'A' ou 'Z', demonstrando o us
 - Manutenção: É mais fácil adicionar novos casos em uma estrutura case do que modificar uma longa série de if-elif-else.
 - Eficiência: Em alguns contextos, case pode ser mais eficiente do que múltiplos if-elif statements, especialmente quando lidando com padrões de texto.
 
-[Voltar para Visão Geral](../visao_geral.md)
+[Voltar para Visão Geral](../README.md)

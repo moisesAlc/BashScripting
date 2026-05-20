@@ -1,31 +1,33 @@
 # Nível intermediário
 
-Decisão (`if`), cálculos, menus (`case`), loops, funções, redirecionamento, arrays e ferramentas de terminal. Parte do conteúdo ainda está na **raiz do repositório** até a migração terminar.
+Decisão (`if`), cálculos, menus (`case`), loops, funções, redirecionamento, arrays e tmux.
 
-## Ordem sugerida (quando tudo estiver nesta pasta)
+## Ordem de leitura
 
-1. Condicional → Cálculos → Case → Loop (`for`, `while`)
-2. Prática: [calculadora](../../atividades/01.calculadora/calculadora.sh) *(será movida para `pratica/calculadora/`)*
-3. Funções → Redirecionamento → Pipe *(reforço)* → Arrays → IFS → tmux
+1. [Condicionais](condicional/condicional.md) — `if`, `test`, `[[ ]]`
+2. [Cálculos](calculos/calculos.md) — `expr`, `(())`, `bc`
+3. [Case](case/case.md) — menus; [case/script.sh](case/script.sh)
+4. [Loop for](loop/for.md)
+5. [Loop while](loop/while.md)
+6. [Calculadora](pratica/calculadora/) — projeto prático
+7. [Funções](funcoes/funcoes.md)
+8. [Redirecionamento](fluxos/redirecionamento.md) — `stdin` / `stdout` / `stderr`
+9. [IFS](fluxos/IFS.md) — parsing de campos e `while read`
+10. [Arrays](arrays/arrays.md)
+11. [tmux](tmux/tmux.md) — sessões no terminal *(opcional)*
 
-## Conteúdo (caminhos atuais na raiz)
+## Prática
 
-| Tópico | Caminho |
-|--------|---------|
-| Condicionais | [condicional/condicional.md](../../condicional/condicional.md) |
-| Cálculos | [calculos/calculos.md](../../calculos/calculos.md) |
-| Case | [case/case.md](../../case/case.md) |
-| Loop for | [loop/for.md](../../loop/for.md) |
-| Loop while | [loop/while.md](../../loop/while.md) |
-| Funções | [funcoes/funcoes.md](../../funcoes/funcoes.md) |
-| Redirecionamento | [fluxos/redirecionamento.md](../../fluxos/redirecionamento.md) |
-| IFS | [fluxos/IFS.md](../../fluxos/IFS.md) |
-| Arrays | [arrays/arrays.md](../../arrays/arrays.md) |
-| tmux | [tmux/tmux.md](../../tmux/tmux.md) |
+| Recurso | Caminho |
+|---------|---------|
+| `teste_then.sh` | [condicional/teste_then.sh](condicional/teste_then.sh) |
+| Menu case | [case/script.sh](case/script.sh) |
+| Calculadora | [pratica/calculadora/](pratica/calculadora/) |
+| Exemplo de erro | [fluxos/erro.log](fluxos/erro.log) |
 
 ## Pré-requisito
 
-Concluir a trilha [iniciante](../iniciante/README.md).
+Trilha [iniciante](../iniciante/README.md) (`shell`, `entrada_usuario`, `pipe`).
 
 ## Próximo nível
 

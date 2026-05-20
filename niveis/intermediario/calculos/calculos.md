@@ -69,4 +69,4 @@ echo "Resultado da divisão com ponto flutuante: $resultado"
 
 Neste exemplo, ```scale=2``` define o número de dígitos decimais no resultado. O comando ```bc``` é poderoso e pode lidar com expressões matemáticas complexas, variáveis, funções matemáticas padrão e até mesmo script diretamente dentro de suas operações.
 
-[Voltar para Visão Geral](../README.md)
+[Voltar para trilha intermediária](../README.md)

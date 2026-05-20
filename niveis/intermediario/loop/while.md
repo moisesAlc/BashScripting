@@ -43,7 +43,7 @@ do
 done < "arquivo.txt"
 ```
 
-#### Para entender melhor o uso do [IFS](fluxos\IFS.md)
+#### Para entender melhor o uso do [IFS](../fluxos/IFS.md)
 
 Neste exemplo, cada linha do arquivo arquivo.txt é lida e processada sequencialmente até que o fim do arquivo seja alcançado.
 
@@ -54,6 +54,6 @@ Garanta que a condição do loop while possa eventualmente se tornar falsa. Caso
 ## Use sleeps para reduzir carga: 
 Em loops while que envolvem esperar por eventos (como a criação de um arquivo ou mudanças de status), é uma boa prática usar sleep para evitar que o loop consome excessivamente a CPU.
 ## Tratamento de sinais: 
-Em scripts mais complexos que podem ser interrompidos, considerar o tratamento de sinais para sair de loops while de maneira limpa é crucial, usando por exemplo [trap](..\trap\trap.md) para capturar sinais e limpar recursos antes de sair.
+Em scripts mais complexos que podem ser interrompidos, considerar o tratamento de sinais para sair de loops while de maneira limpa é crucial, usando por exemplo [trap](../../avancado/trap/trap.md) para capturar sinais e limpar recursos antes de sair.
 
-[Voltar para Visão Geral](../README.md)
+[Voltar para trilha intermediária](../README.md)

@@ -1,22 +1,19 @@
 # Trilhas de estudo
 
-O material está organizado em três níveis. Cada trilha tem **conteúdo** (notas e exemplos) e **prática** (exercícios e projetos).
+Material em três níveis: **conteúdo** (notas e exemplos) e **prática** (projetos).
 
-| Nível | Objetivo | Comece aqui |
-|-------|----------|-------------|
-| [Iniciante](iniciante/README.md) | Ambiente, entrada do usuário e pipes entre comandos | `shell` → `entrada_usuario` → `pipe` |
-| [Intermediário](intermediario/README.md) | Decisão, repetição, estrutura e I/O em arquivos | Após concluir o iniciante |
-| [Avançado](avancado/README.md) | Robustez, sinais e cenários com logs/HTTP | Após concluir o intermediário |
+| Nível | Objetivo | Pasta |
+|-------|----------|-------|
+| [Iniciante](iniciante/README.md) | Terminal, `read`, pipes | `niveis/iniciante/` |
+| [Intermediário](intermediario/README.md) | `if`, loops, funções, I/O, calculadora | `niveis/intermediario/` |
+| [Avançado](avancado/README.md) | `trap`, logs, robustez | `niveis/avancado/` |
 
-## Em construção
+## Ordem geral
 
-A reorganização é feita em partes. Tópicos ainda na raiz do repositório aparecem nos README de cada nível com o caminho atual.
+1. Iniciante: `shell` → `entrada_usuario` → `pipe`
+2. Intermediário: ver [intermediario/README.md](intermediario/README.md) → [calculadora](intermediario/pratica/calculadora/)
+3. Avançado: `trap` → [integradora](avancado/pratica/integradora/)
 
-## Extensões planejadas (genéricas, sem provedor de cloud)
+## Extensões planejadas (genéricas)
 
-- Variáveis de ambiente e config
-- HTTP com `curl`
-- SSH
-- Exit codes e `set -euo pipefail`
-
-Detalhes no plano de evolução do repositório.
+Variáveis de ambiente, `curl`/HTTP, SSH, `set -euo pipefail` — sem provedor de cloud nesta fase.

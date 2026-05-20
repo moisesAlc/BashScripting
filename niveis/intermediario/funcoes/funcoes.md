@@ -54,6 +54,6 @@ Olá, Maria!
 
 ## Ver Mais
 
-### Verifique [entrada de usuário](entrada_usuario\entrada.md)
+### Verifique [entrada de usuário](../../iniciante/entrada_usuario/entrada.md)
 
 [Voltar para trilha intermediária](../README.md)

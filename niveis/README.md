@@ -14,6 +14,8 @@ Material em três níveis: **conteúdo** (notas e exemplos) e **prática** (proj
 2. Intermediário: ver [intermediario/README.md](intermediario/README.md) → [calculadora](intermediario/pratica/calculadora/)
 3. Avançado: `trap` → [integradora](avancado/pratica/integradora/)
 
+Bookmarks da estrutura antiga na raiz do repo: [CAMINHOS-ANTIGOS.md](../CAMINHOS-ANTIGOS.md).
+
 ## Extensões planejadas (genéricas)
 
 Variáveis de ambiente, `curl`/HTTP, SSH, `set -euo pipefail` — sem provedor de cloud nesta fase.

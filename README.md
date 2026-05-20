@@ -34,7 +34,7 @@ Comece por [O que é um shell?](niveis/iniciante/shell/shell.md).
 | [`niveis/intermediario/`](niveis/intermediario/README.md) | Tópicos de sintaxe e estrutura + `pratica/calculadora/` |
 | [`niveis/avancado/`](niveis/avancado/README.md) | `trap` + `pratica/integradora/` |
 
-Pastas na raiz com apenas `README.md` redirecionam para o novo caminho (compatibilidade).
+Todo o material fica em **`niveis/`**. Links antigos da raiz: [CAMINHOS-ANTIGOS.md](CAMINHOS-ANTIGOS.md).
 
 ## Projetos práticos
 

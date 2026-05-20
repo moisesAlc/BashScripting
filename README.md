@@ -1,45 +1,104 @@
-# Atividade *Opcional* de Shell Scripting IT Talent 2024
+# Shell Scripting com Bash
 
-## Utilização do TMUX: [tmux](tmux/tmux.md)
+Material de estudo e prática em **Shell Scripting** (Bash): notas conceituais, exemplos curtos e atividades guiadas. O foco é automação no terminal, fluxo de dados (pipes e redirecionamento), controle de execução e boas práticas básicas.
 
-## Funções: [funções](funcoes/funcoes.md)
+Leia primeiro [O que é um shell?](shell/shell.md) (conceito, histórico, empilhamento, compatibilidade e uso no Windows/macOS).
 
-## Condicionais: [condicional, test,  operadores lógicos...](condicional/condicional.md)
+## Objetivos
 
-## Leitura de Entrada do Usuário: [entrada do usuário](entrada_usuario/entrada.md)
+- Dominar sintaxe e idiomas comuns do Bash para scripts reutilizáveis.
+- Entender **condicionais**, **loops**, **funções**, **arrays** e manipulação de texto.
+- Usar **pipes**, **redirecionamento** e variáveis como `IFS` de forma consciente.
+- Trabalhar com **entrada do usuário**, **cálculos** e ferramentas auxiliares (por exemplo `tmux` para sessões persistentes no terminal).
 
-## Cálculos numéricos: [cálculos](calculos/calculos.md)
+## Pré-requisitos
 
-## Estrutura Case: [case](case/case.md)
+- Linux ou ambiente compatível com **Bash** (versão 4+ recomendada para alguns recursos de arrays). No Windows ou macOS, veja [shell/shell.md](shell/shell.md).
+- Permissão de execução nos scripts (`chmod +x script.sh`) ou invocação explícita: `bash script.sh`.
 
-## Loop For: [loop](loop/for.md)
+## Estrutura do repositório
 
-## Loop While: [loop](loop/while.md)
+| Caminho | Conteúdo |
+|---------|------------|
+| `shell/` | Conceito de shell, histórico (`sh`, Bash, Zsh), empilhamento e ambientes Windows/macOS. |
+| `arrays/` | Arrays em Bash. |
+| `atividades/01.calculadora/` | Implementação de referência da calculadora em menu. |
+| `atividades/02.integradora/` | Script que gera linhas de log a partir de texto; base para exercícios de validação e logs. |
+| `calculos/` | Operações e aritmética no shell. |
+| `case/` | Estrutura `case` e exemplo em `script.sh`. |
+| `condicional/` | `if`, `test`, operadores lógicos; exemplo em `teste_then.sh`. |
+| `entrada_usuario/` | `read` e leitura interativa. |
+| `fluxos/` | `IFS`, redirecionamento e arquivos de exemplo (`erro.log`). |
+| `funcoes/` | Definição e uso de funções. |
+| `loop/` | Loops `for` e `while`. |
+| `pipe/` | Pipelines entre comandos; scripts de exemplo. |
+| `tmux/` | Uso do multiplexer `tmux` no dia a dia. |
+| `trap/` | Sinais e limpeza com `trap`. |
 
-## IFS: [IFS](fluxos/IFS.md)
+## Índice dos tópicos (notas)
 
-## Trap: [trap](trap/trap.md)
+Cada link aponta para um arquivo Markdown na pasta indicada.
 
-## Pipe: [pipe](pipe/pipe.md)
+1. [O que é um shell — conceito, histórico, compatibilidade](shell/shell.md)
+2. [TMUX — sessões e janelas no terminal](tmux/tmux.md)
+3. [Funções](funcoes/funcoes.md)
+4. [Condicionais — `test`, `then`, operadores lógicos](condicional/condicional.md)
+5. [Leitura de entrada do usuário](entrada_usuario/entrada.md)
+6. [Cálculos numéricos](calculos/calculos.md)
+7. [Estrutura `case`](case/case.md)
+8. [Loop `for`](loop/for.md)
+9. [Loop `while`](loop/while.md)
+10. [IFS — separador de campos interno](fluxos/IFS.md)
+11. [`trap` — sinais e encerramento](trap/trap.md)
+12. [Pipes entre comandos](pipe/pipe.md)
+13. [Redirecionamento (`stdin` / `stdout` / `stderr`)](fluxos/redirecionamento.md)
+14. [Arrays](arrays/arrays.md)
 
-## Redirecionamento: [redirecionamento](fluxos/redirecionamento.md)
+Sugerimos seguir a ordem acima se estiver começando; depois pode alternar entre `pipe/`, `fluxos/` e `trap/` conforme seus scripts ficarem mais complexos.
 
-## Arrays: [arrays](arrays/arrays.md)
+## Atividades práticas
 
----
+### 1. Calculadora interativa
 
-## 1ª Atividade Proposta: Calculadora
+Implemente (ou compare com a solução em [`atividades/01.calculadora/calculadora.sh`](atividades/01.calculadora/calculadora.sh)) uma calculadora que:
 
-- Crie uma calculadora que recebe dois operandos e um operador (soma, subtração, multiplicação e divisão) e entrega o resultado do cálculo. Você pode mostrar um menu de opções onde o usuário poderá escolher qual função executar, inclusive sair do programa
+- recebe dois operandos e um operador (soma, subtração, multiplicação e divisão);
+- apresenta o resultado correto;
+- opcionalmente expõe um **menu** para escolher a operação ou sair.
 
-## 2ª Atividade Proposta: Análise de Logs
+Para executar a referência:
 
-Verifique o [script de geração de logs](atividades/02.integradora/script.sh) e entenda o seu funcionamento. Depois, verifique:
+```bash
+bash atividades/01.calculadora/calculadora.sh
+```
 
-- **Checagem de Arquivo de Log**: O script assume que o arquivo de log pode ser escrito sem verificar se ele já existe ou se é acessível. Adicione uma mensagem de erro para ```stderr``` caso o arquivo não exista. 
+*(O script pode tentar instalar `bc` via `apt` se não estiver disponível — ajuste conforme sua distribuição.)*
 
-- **Checagem de Arquivo de Entrada**: Adicione uma mensagem de erro para ```stderr``` caso o arquivo não exista e redirecione para o arquivo ```input_error_log.txt```
+### 2. Geração e tratamento de logs
 
-- **Crição de Log específico de Erros**: Crie um arquivo específico para logs de erros (contém a tag ERRO) em ```error_log.txt```
+1. Leia e compreenda [`atividades/02.integradora/script.sh`](atividades/02.integradora/script.sh) (entrada `lorem_ipsum.txt`, saída em `log_output.txt`).
+2. Melhore o script conforme os requisitos abaixo.
 
-- **Crie cenários**: crie cenários mais complexos utilizando o que aprendeu.
+| Requisito | Detalhe |
+|-----------|---------|
+| **Arquivo de log de saída** | Se o arquivo de log não existir ou não for gravável, escreva uma mensagem de erro em **stderr** em vez de falhar em silêncio. |
+| **Arquivo de entrada** | Se o arquivo de entrada não existir, mensagem de erro em **stderr** e registro do problema em `input_error_log.txt`. |
+| **Log só de erros** | Linhas cuja tag seja erro (por exemplo contendo `ERROR` / `ERRO`) devem ser duplicadas ou filtradas para `error_log.txt`, conforme a convenção que definir no enunciado do seu script. |
+| **Cenários extra** | Adicione casos mais realistas (rotação de arquivos, múltiplas fontes, filtros com `grep`/`awk`, etc.) usando o que aprendeu nas pastas de notas. |
+
+Execução típica (a partir da pasta da atividade):
+
+```bash
+cd atividades/02.integradora
+bash script.sh
+```
+
+## Convenções rápidas
+
+- Preferir `#!/usr/bin/env bash` no shebang para portabilidade entre sistemas onde o Bash não está em `/bin/bash`.
+- Citar variáveis e parâmetros: `"$var"` e `"$1"` para evitar quebras com espaços ou globbing acidental.
+- Testar scripts com `bash -n script.sh` (sintaxe) antes de executar em produção.
+
+## Licença e uso
+
+Utilize e adapte o material para estudo pessoal ou formação. Se forkar o repositório, mantenha créditos coerentes com a licença do projeto (se existir arquivo `LICENSE` na raiz, siga-o).

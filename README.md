@@ -8,7 +8,7 @@ Material de estudo e prática em **Shell Scripting** (Bash), organizado em trilh
 |-------|-----------|
 | [**Iniciante**](niveis/iniciante/README.md) | Shell, entrada do usuário, pipes |
 | [**Intermediário**](niveis/intermediario/README.md) | Condicionais, loops, funções, fluxos, arrays, calculadora |
-| [**Avançado**](niveis/avancado/README.md) | trap, integradora de logs, robustez (em expansão) |
+| [**Avançado**](niveis/avancado/README.md) | shell (TTY/PTY), trap, integradora de logs, robustez (em expansão) |
 
 📚 Visão geral: [niveis/README.md](niveis/README.md).
 
@@ -24,7 +24,7 @@ Material de estudo e prática em **Shell Scripting** (Bash), organizado em trilh
 ## ✅ Pré-requisitos
 
 - 📚 Linux ou ambiente compatível com **Bash** (versão 4+ recomendada para arrays).
-- 🖥️ No Windows ou macOS, veja [shell/shell.md](niveis/iniciante/shell/shell.md).
+- 🖥️ No Windows ou macOS: [shell iniciante](niveis/iniciante/shell/shell.md) (visão geral) e [shell avançado](niveis/avancado/shell/shell.md) (Git Bash, WSL, macOS).
 
 ## 🎯 Estrutura
 
@@ -32,7 +32,7 @@ Material de estudo e prática em **Shell Scripting** (Bash), organizado em trilh
 |---------|------------|
 | [`niveis/iniciante/`](niveis/iniciante/README.md) | `shell`, `entrada_usuario`, `pipe` |
 | [`niveis/intermediario/`](niveis/intermediario/README.md) | Tópicos de sintaxe e estrutura + `pratica/calculadora/` |
-| [`niveis/avancado/`](niveis/avancado/README.md) | `trap` + `pratica/integradora/` |
+| [`niveis/avancado/`](niveis/avancado/README.md) | `shell`, `trap` + `pratica/integradora/` |
 
 📂 Todo o material fica em **`niveis/`**. 🔄 Links antigos da raiz: [CAMINHOS-ANTIGOS.md](CAMINHOS-ANTIGOS.md).
 

@@ -4,7 +4,7 @@ Você entende o **terminal e o shell**, lê entrada com `read` e **encadeia coma
 
 ## 🗺️ Ordem de leitura
 
-1. 🖥️ [O que é um shell](shell/shell.md) — terminal, TTY/PTY, Bash, compatibilidade
+1. 🖥️ [O que é um shell](shell/shell.md) — terminal vs shell, Bash/Zsh/Fish/`sh`, armadilhas comuns
 2. ⌨️ [Entrada do usuário](entrada_usuario/entrada.md) — `read` e prompts
 3. 🔗 [Pipes](pipe/pipe.md) — `grep`, `sort`, exemplos com `log.txt`
 

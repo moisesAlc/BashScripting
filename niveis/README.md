@@ -12,7 +12,7 @@ Material em três níveis: **conteúdo** (notas e exemplos) e **prática** (proj
 
 1. 🖥️ Iniciante: `shell` → `entrada_usuario` → `pipe`
 2. ⌨️ Intermediário: ver [intermediario/README.md](intermediario/README.md) → [calculadora](intermediario/pratica/calculadora/)
-3. ⚡ Avançado: `trap` → [integradora](avancado/pratica/integradora/)
+3. ⚡ Avançado: `shell` (TTY/PTY) → `trap` → [integradora](avancado/pratica/integradora/)
 
 Bookmarks da estrutura antiga na raiz do repo: [CAMINHOS-ANTIGOS.md](../CAMINHOS-ANTIGOS.md).
 

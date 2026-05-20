@@ -4,9 +4,10 @@ Robustez em scripts: sinais (`trap`), redirecionamento avançado (em evolução)
 
 ## 🗺️ Ordem de leitura
 
-1. ⚡ [trap](trap/trap.md) — `SIGINT`, `EXIT`, limpeza de recursos
-2. 🖥️ Redirecionamento avançado *(a criar: heredoc, subshells)* — base em [redirecionamento](../intermediario/fluxos/redirecionamento.md)
-3. 📜 Prática: [integradora de logs](pratica/integradora/)
+1. 🖥️ [Shell: TTY, PTY e sessões](shell/shell.md) — aprofundamento do tópico iniciante (opcional antes de `trap`)
+2. ⚡ [trap](trap/trap.md) — `SIGINT`, `EXIT`, limpeza de recursos
+3. 🖥️ Redirecionamento avançado *(a criar: heredoc, subshells)* — base em [redirecionamento](../intermediario/fluxos/redirecionamento.md)
+4. 📜 Prática: [integradora de logs](pratica/integradora/)
 
 ## 🛠️ Prática
 

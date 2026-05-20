@@ -1,7 +1,6 @@
+# 🔀 Condicionais do Bash
 
-# Condicionais do Bash
-
-## Visão Geral do if
+## 🔀 Visão Geral do if
 
 ```bash
 numero=0
@@ -17,7 +16,7 @@ else
 fi
 ```
 
-### A necessidade do `then`
+### 🔹 A necessidade do `then`
 
 No Bash e em outras shells compatíveis, a palavra-chave then é parte integrante da sintaxe do comando if. Ela é usada para definir claramente onde começam os comandos que serão executados se a condição testada pelo if for verdadeira. Aqui estão alguns pontos importantes sobre o uso de then e por que ele é necessário:
 
@@ -27,23 +26,23 @@ No Bash e em outras shells compatíveis, a palavra-chave then é parte integrant
 
 **Sintaxe Formal**: A sintaxe do if em Bash e shells POSIX exige o uso de then. Isso ajuda a evitar ambiguidades no script, especialmente em scripts mais complexos com múltiplas condições e aninhamentos.
 
-### Diferença entre `[ ... ]` e `[[ ... ]]`
+### 🔹 Diferença entre `[ ... ]` e `[[ ... ]]`
 
 No shell scripting, especialmente no contexto do Bash, a diferença entre usar um par de colchetes [ ... ] e dois pares de colchetes [[ ... ]] para cercar uma expressão é significativa e impacta como as expressões são avaliadas e quais funcionalidades estão disponíveis. Ambos são usados para testar condições, mas existem diferenças chave:
 
-#### 1. [ ... ] (Teste Condicional POSIX)
+#### ▫️ ▫️ 1. [ ... ] (Teste Condicional POSIX)
 Portabilidade: O comando [ ... ] é compatível com a especificação POSIX, o que significa que scripts que o utilizam serão portáveis e deverão funcionar em qualquer shell que siga o padrão POSIX, como sh, Bash, e Dash.
 Comportamento: Dentro de [ ... ], os operadores e as strings são interpretados pelo shell antes do teste condicional ser processado. Por exemplo, você deve usar "$variavel" para garantir que valores em branco sejam corretamente manipulados.
 Operadores: Suporta operadores de teste básicos como -eq, -ne, -lt, -le, -gt, -ge, para comparações numéricas, e =, !=, para comparações de string.
 Limitações: Não suporta certas operações mais complexas, como regex diretamente ou operadores lógicos avançados (&&, ||) dentro da expressão. Operadores lógicos devem ser manipulados fora dos colchetes: [ $a -lt $b ] && [ $c -eq $d ].
 
-#### 2. [[ ... ]] (Construção Avançada do Bash)
+#### ▫️ ▫️ 2. [[ ... ]] (Construção Avançada do Bash)
 Não-portabilidade: [[ ... ]] é uma funcionalidade avançada do Bash e de alguns outros shells modernos, mas não é compatível com todos os ambientes POSIX. Scripts que utilizam [[ ... ]] podem não funcionar em shells que não sejam Bash.
 Comportamento Avançado: As expressões dentro de [[ ... ]] são tratadas de maneira especial pelo Bash, o que permite o uso de recursos adicionais como regex e padrões glob sem a necessidade de aspas extras, mesmo para strings que contêm espaços.
 Operadores: Suporta operadores lógicos avançados diretamente dentro dos colchetes, como && e || para combinações lógicas, bem como == e != para comparações de padrão (globbing).
 Manipulação de Strings e Regex: Dentro de [[ ... ]], você pode fazer comparações de padrões usando globbing (ex: [[ $a == z* ]]) para verificar se uma variável corresponde a um padrão. Também suporta expressões regulares diretamente com =~.
 
-### Exemplos Práticos
+### 🔹 Exemplos Práticos
 
 ```bash
 # Uso de [ ... ]
@@ -62,13 +61,13 @@ if [[ $texto =~ ^[0-9]+$ ]]; then
 fi
 ```
 
-#### Demonstração 
+#### ▫️ ▫️ Demonstração
 
 Veja na imagem abaixo que o operador `<` não é reconhecido quando usamos `[ ... ]`, mas é quando usamos `[[ ... ]]`
 
 ![alt text](image.png)
 
-### Operadores de Comparação Numérica
+### 🔹 Operadores de Comparação Numérica
 
 ```bash
 # Operador de igualdade
@@ -102,4 +101,4 @@ if [ "$a" -le "$b" ]; then
 fi
 ```
 
-[Voltar para trilha intermediária](../README.md)
+🔙 [Voltar para trilha intermediária](../README.md)

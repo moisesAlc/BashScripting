@@ -1,8 +1,8 @@
-# Calculadora interativa
+# 🧮 Calculadora interativa
 
 Implemente (ou compare com [`calculadora.sh`](calculadora.sh)) uma calculadora com dois operandos e operações: soma, subtração, multiplicação e divisão. Pode usar menu para escolher a operação ou sair.
 
-## Executar
+## ▶️ ▶️ Executar
 
 ```bash
 cd niveis/intermediario/pratica/calculadora

@@ -1,15 +1,15 @@
-# Arrays
+# 📚 Arrays
 
 Os arrays em Bash são estruturas de dados que permitem armazenar e manipular múltiplas variáveis sob um único nome. Eles são uma parte essencial da programação em shell, proporcionando uma maneira flexível de lidar com conjuntos de dados e facilitar a execução de tarefas repetitivas ou complexas.
 
-## Tipos de Arrays em Bash
+## 📚 Tipos de Arrays em Bash
 Bash suporta dois tipos principais de arrays:
 
-- **Arrays Indexados**: São arrays nos quais os elementos são indexados numericamente, começando do índice zero. Você pode acessar os elementos usando seus índices numéricos.
-- **Arrays Associativos** (ou mapas): Disponíveis a partir do Bash versão 4.0, esses arrays usam strings como chaves ao invés de índices numéricos. Para usar arrays associativos, você precisa declará-los explicitamente antes de usar.
+- 📚 **Arrays Indexados**: São arrays nos quais os elementos são indexados numericamente, começando do índice zero. Você pode acessar os elementos usando seus índices numéricos.
+- 📚 **Arrays Associativos** (ou mapas): Disponíveis a partir do Bash versão 4.0, esses arrays usam strings como chaves ao invés de índices numéricos. Para usar arrays associativos, você precisa declará-los explicitamente antes de usar.
 
-## Declarando e Usando Arrays
-### Arrays Indexados
+## 📚 Declarando e Usando Arrays
+### 🔹 Arrays Indexados
 Para declarar e manipular arrays indexados no Bash, você pode usar a seguinte sintaxe:
 
 ```bash
@@ -35,7 +35,7 @@ echo "O array tem ${#nomes[@]} elementos."
 echo "Todos os nomes: ${nomes[*]}"
 ```
 
-### Arrays Associativos
+### 🔹 Arrays Associativos
 Para arrays associativos, a sintaxe muda um pouco, principalmente na declaração e na maneira como você acessa os dados:
 
 ```bash
@@ -57,7 +57,7 @@ for usuario in "${!usuarios[@]}"; do
 done
 ```
 
-### Operações Comuns com Arrays
+### 🔹 Operações Comuns com Arrays
 
 **Adição de elementos**: Como visto nos exemplos, adicionar elementos em um array indexado ou associativo é direto, atribuindo valores a novas chaves ou índices.
 
@@ -71,7 +71,7 @@ unset nomes[1]  # Remove o elemento com índice 1
 
 **Listando Chaves e Valores**: Em arrays associativos, ```${!array[@]}``` lista todas as chaves do array.
 
-## Considerações
+## ⚠️ Considerações
 Arrays em Bash são úteis para scripts que necessitam manipular listas de dados ou configurar múltiplos valores de configuração de forma organizada. No entanto, eles têm algumas limitações em comparação com arrays em linguagens de programação mais completas, como a falta de suporte para arrays multidimensionais nativos e limitações em operações complexas de dados.
 
-[Voltar para trilha intermediária](../README.md)
+🔙 [Voltar para trilha intermediária](../README.md)

@@ -1,12 +1,12 @@
-# Manual Básico do Tmux
+# 🪟 Manual Básico do Tmux
 
 O `tmux` é um multiplexador de terminal poderoso para sistemas Unix-like. Ele permite que você controle vários terminais a partir de uma única tela, podendo alternar entre eles, dividir a tela em painéis e até desconectar e reconectar a sessões sem perder o estado. Este manual básico cobrirá como instalar, usar e aproveitar alguns dos recursos essenciais do `tmux`.
 
-## Instalação
+## 📥 Instalação
 
 O `tmux` pode ser instalado na maioria das distribuições Linux usando o gerenciador de pacotes da distribuição.
 
-## Iniciando com o Tmux
+## 🪟 Iniciando com o Tmux
 Para começar uma sessão tmux, simplesmente abra um terminal e digite:
 
   ```bash
@@ -88,7 +88,7 @@ Reanexar a uma sessão:
 
 Substitua session_name pelo nome da sessão a qual você deseja se reconectar.
 
-## Personalização
+## 🎨 Personalização
 
 O tmux é altamente personalizável. As configurações podem ser alteradas criando e modificando um arquivo chamado .tmux.conf no seu diretório home. Aqui estão algumas configurações básicas:
 
@@ -104,4 +104,4 @@ set -sg escape-time 1
 bind r command-prompt "rename-session %%"
 ```
 
-[Voltar para trilha intermediária](../README.md)
+🔙 [Voltar para trilha intermediária](../README.md)
